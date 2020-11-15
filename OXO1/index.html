@@ -4,11 +4,22 @@
     <meta charset="UTF-8">
     <title>Крестики-нолики</title>
     <style>
-
+        .row div {
+            padding: 10px;
+            border: 1px solid black;
+            height: 30px;
+            weight: 30px;
+            float: left;
+        }
+        .row {
+            clear: both;
+        }
     </style>
 </head>
 <body>
-Щелкните,  чтобы сыграть в крестики-нолики.<br />
+<div onclick="alert(seyHello())">
+    Щелкните,  чтобы сыграть в крестики-нолики.<br />
+</div>
 <div>
     <div class="row">
         <div></div>
@@ -25,7 +36,12 @@
         <div></div>
         <div></div>
     </div>
-
 </div>
+
+<script>
+  function seyHello() {
+    alert("Привет !")
+  }
+</script>
 </body>
 </html>
